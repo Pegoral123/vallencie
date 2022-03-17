@@ -1,0 +1,165 @@
+/*Cabeçalho*/
+
+header {
+    background-image: url(../img/fotos-da-marina/capa.jpg);
+    background-position: center;
+}
+
+
+/*Navegação*/
+
+nav {
+    max-height: 50px;
+    min-height: 30px;
+    background-color: palevioletred;
+}
+
+nav ul {
+    display: block;
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 25px;
+    color: black;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* padding 15px 25px */
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*SEÇÃO*/
+
+section {
+    background-color: white;
+    min-height: 250px;
+    max-height: 100%;
+    padding: 80px 0;
+}
+
+#rodape div h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.propaganda {
+    background-image: url(../img/fotos-da-marina/foto_propaganda2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+.propaganda2 {
+    background-image: url(../img/fotos-da-marina/foto_propaganda2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+.left {
+    float: left;
+}
+
+.produtos {
+    border-radius: 5%;
+    border: solid 1px #888
+}
+
+.produtos input,
+.produtos button {
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.responsive {
+    width: 100%;
+}
+
+.centro {
+    text-align: center;
+    margin: auto;
+}
+
+.borda {
+    border-radius: 50%
+}
+
+.fonte {
+    font-size: 30px;
+}
+
+.imgSocial {
+    padding: 50px;
+}
+
+.nolink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icone {
+    font-size: 30px;
+}
+
+
+/*media*/
+
+@media screen and (max-width:768px) {
+    .sair {
+        display: none;
+    }
+    nav ul {
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul l a {
+        text-align: center;
+    }
+    .imgSocial {
+        padding: 20px;
+    }
+    .tamanho {
+        padding-top: 40px;
+    }
+    .fotoSocial {
+        max-height: 200px;
+        max-width: 200px;
+        text-align: center;
+    }
+    .spacing {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .spacing1 {
+        padding-right: 100px;
+    }
+    .padding {
+        padding-right: 30px;
+    }
+    .padding-left {
+        padding-left: 30px;
+    }
+}

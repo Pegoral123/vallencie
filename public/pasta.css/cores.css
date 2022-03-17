@@ -1,0 +1,38 @@
+.bg-whithe {
+    background-color: #ffffff;
+}
+
+.whithe {
+    color: #ffffff;
+}
+
+.bg-rosa {
+    background-color: #d7949d;
+}
+
+.rosa {
+    color: #d7949d;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.black {
+    color: black;
+}
+
+.dourado {
+    color: #ecc661;
+}
+
+.bg-dourado {
+    background-color: #ecc661;
+}
+
+.grad {
+    height: auto;
+    background-color: #d7949d;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(#d7949d, #ecc661);
+}

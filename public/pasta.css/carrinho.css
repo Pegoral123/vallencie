@@ -1,0 +1,16 @@
+.altura {
+    height: 100px;
+}
+
+section img {
+    z-index: 10;
+}
+
+nav {
+    max-height: 50px;
+    min-height: 30px;
+}
+
+.sublinhar {
+    text-decoration: underline;
+}
