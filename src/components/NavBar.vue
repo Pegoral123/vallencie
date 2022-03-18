@@ -1,5 +1,12 @@
 <template>
+<section>
+ <header>
+      <img alt="Logo marca da loja bololand." src="../assets/logo.marca.png" class="altura">
+      
+    </header>
   <nav class="navbar navbar-expand-lg navbar-dark grad sticky-sm-top">
+        
+             
     <div class="container">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button
@@ -37,6 +44,7 @@
       </div>
     </div>
   </nav>
+</section>
 </template>
 
 <script>
@@ -45,5 +53,44 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+nav{ max-height: 50px;
+    min-height: 30px;
+    background-color:palevioletred;
+ 
+}
+nav ul {
+     display:block;
+    float: left;
+     
+}
+nav ul li {
+    display: inline-block;
+   line-height: 25px;
+   color: black;
+   font-size: 15pt;
+   font-family: Arial, Helvetica, sans-serif;
+ 
+}
+nav ul li a{color: 
+    black;text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    /* padding 15px 25px */           
+
+ }
+nav ul li a:hover{ 
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+}
+.altura{
+    height: 300px
+}
+header{background-image: url(../assets/capa.jpg); 
+   background-position: center;
+     }
 </style>
