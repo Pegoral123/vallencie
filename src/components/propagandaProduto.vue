@@ -27,6 +27,49 @@ section {
     background-color: white;
     min-height: 250px;
     max-height: 100%;
-    padding: 80px 0;
+    padding: 50px 0;
 }
+
+@media screen and (max-width:768px){
+
+    .sair{display: none; }
+
+    nav ul{        
+        width: 100%;
+}
+  nav ul li{
+      width: 100%;
+  }  
+  nav ul l a{
+      text-align: center;
+      
+  } 
+  
+ .imgSocial{
+    padding: 20px;
+}
+.tamanho{
+    padding-top: 40px;
+}
+.fotoSocial{
+    max-height: 200px;max-width: 200px;
+    text-align: center;
+}
+.spacing{
+    padding-top: 20px;
+    text-align: center;
+    
+ 
+}
+.spacing1{
+  padding-right: 100px;
+  
+}
+.padding{
+    padding-right: 30px;
+}
+.padding-left{
+    padding-left: 30px;
+}
+ }
 </style>
