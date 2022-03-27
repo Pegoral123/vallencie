@@ -5,7 +5,7 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="../assets/produto1.jpg"
+            src="@/assets/produto1.jpg"
             alt="demonstracao "
             class="img-fluid p-5 imgSocial rounded-circle"
           />
@@ -15,7 +15,7 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="../assets/produto1.jpg"
+            src="@/assets/produto1.jpg"
             alt="demonstracao "
             class="img-fluid p-5 imgSocial rounded-circle"
           />
@@ -25,7 +25,7 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="../assets/produto1.jpg"
+            src="@/assets/produto1.jpg"
             alt="demonstracao"
             class="img-fluid p-5 imgSocial rounded-circle"
           />
@@ -35,7 +35,7 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="../assets/produto1.jpg"
+            src="@/assets/produto1.jpg"
             alt="demonstracao"
             class="img-fluid p-5 imgSocial rounded-circle"
           />
@@ -96,7 +96,7 @@
   </section>
   <section class="propaganda2 centro sair"></section>
 
-  <section id="promocoes" class="bg-rosa">
+  <section id="promocoes" class="bg-whithe">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-12">
@@ -174,7 +174,7 @@
         </div>
 
         <div id="propaganda3" class="sair col-4">
-          <img src="../assets/propaganda.jpeg" class="img-fluid" />
+          <img src="@/assets/propaganda.jpeg" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -183,8 +183,8 @@
 </template>
 
 <script>
-import NavBar from "./NavBar.vue";
-import rodapeSite from "./rodapeSite.vue";
+import NavBar from "@/components/NavBar.vue";
+import rodapeSite from "@/components/rodapeSite.vue";
 export default {
   components: {
     NavBar,
