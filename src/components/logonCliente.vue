@@ -7,14 +7,19 @@
         <form action="" class="col-12 col-md-6 m-auto bg-whithe p-5">
           <div class="form-group">
             <label class="float-start"> E-mail </label>
-            <input type="email" id="email" class="form-control" />
+            <input type="email" name="email" id="email" class="form-control" />
           </div>
 
           <div class="form-group">
             <span class="d-flex justify-content-between"
               ><label>Senha</label> <i>Esqueceu a senha?</i></span
             >
-            <input type="password" id="senha" class="form-control" />
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              class="form-control"
+            />
           </div>
         </form>
       </div>
