@@ -33,6 +33,16 @@
               <router-link to="/logon">login</router-link> |
             </li>
 
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <router-link to="/usuario_listar">Listar</router-link> |
+            </li>
+
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <router-link to="/usuario_add">cadastrar</router-link> |
+            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="carrinho.html">Carrinho</a>
             </li>

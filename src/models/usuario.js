@@ -1,21 +1,25 @@
 export class Usuario {
+    //constructor()
     constructor(
         id = null,
         nome = "",
         senha = "",
-        email = "",
+        //data_nasc = new Date("1970-01-01"),
         data_nasc = null,
-        cpf = 1,
-        tel = 1
+        email = "",
+        foto_perfil = "",
+        tel = "",
+        cpf = "",
+        ativo = true
     ) {
-        this.id = id,
-            this.nome = nome;
+        this.id = id;
+        this.nome = nome;
         this.senha = senha;
-        this.email = email;
-        this.cpf = cpf;
-        this.tel = tel;
         this.data_nasc = data_nasc;
-        this.foto_perfil = "";
-        this.ativo = true;
+        this.email = email;
+        this.foto_perfil = foto_perfil;
+        this.tel = tel;
+        this.cpf = cpf;
+        this.ativo = ativo;
     }
 }
