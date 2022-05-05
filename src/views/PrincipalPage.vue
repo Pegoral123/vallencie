@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <section id="divulgacao" class="container bg-whithe">
+  <section id="divulgacao" class="container bg-whithe py-5">
     <div class="row">
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
@@ -44,9 +44,9 @@
     </div>
   </section>
 
-  <section class="centro sair propaganda"></section>
+  <section class="centro sair propaganda py-5"></section>
 
-  <section id="compras" class="bg-rosa">
+  <section id="compras" class="bg-rosa py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-12">
@@ -56,7 +56,7 @@
             </div>
             <div class="py-3 col-6">
               <h1>Produtos</h1>
-              <p class="whithe">
+              <p class="frases">
                 Eu amo esse site,deveras maravilhoso o produto e o programador
               </p>
               <p class="fs-4">Preço: R$200,00</p>
@@ -94,9 +94,9 @@
       </div>
     </div>
   </section>
-  <section class="propaganda2 centro sair"></section>
+  <section class="propaganda2 centro sair py-5"></section>
 
-  <section id="promocoes" class="bg-whithe">
+  <section id="promocoes" class="bg-whithe py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-12">
@@ -146,7 +146,7 @@
     </div>
   </section>
 
-  <section id="social" class="bg-rosa">
+  <section id="social" class="bg-rosa py-5">
     <div class="container">
       <div class="row">
         <div>
@@ -195,7 +195,7 @@ export default {
 
 <style>
 .bg-rosa {
-  background-color: #d7949d;
+  background-color: #f8cfdf;
 }
 .bg-black {
   background-color: black;
@@ -209,12 +209,7 @@ export default {
 .whithe {
   color: #ffffff;
 }
-.grad {
-  height: auto;
-  background-color: #d7949d;
-  /* For browsers that do not support gradients */
-  background-image: linear-gradient(#d7949d, #ecc661);
-}
+
 .produtos {
   border-radius: 5%;
   border: solid 1px #888;
@@ -223,7 +218,7 @@ section {
   background-color: white;
   min-height: 250px;
   max-height: 100%;
-  padding: 50px 0;
+  padding: 0;
 }
 
 .propaganda2 {

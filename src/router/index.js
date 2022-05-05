@@ -29,7 +29,16 @@ const routes = [{
         component: () =>
             import ('@/components/usuarioListar.vue') // "=>" equivale a uma "function(){}"
 
+    },
+
+    {
+        path: '/usuario_carrinho',
+        name: 'usuario_carrinho',
+        component: () =>
+            import ('@/components/usuarioCarrinho.vue') // "=>" equivale a uma "function(){}"
+
     }
+
 ]
 
 const router = createRouter({

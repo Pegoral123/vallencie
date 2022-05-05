@@ -1,8 +1,19 @@
 /*Cabeçalho*/
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap');
 header {
     background-image: url(../img/fotos-da-marina/capa.jpg);
     background-position: center;
+}
+
+.titulo {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.frases {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
 
@@ -54,7 +65,7 @@ section {
     background-color: white;
     min-height: 250px;
     max-height: 100%;
-    padding: 80px 0;
+    padding: 0;
 }
 
 #rodape div h1 {

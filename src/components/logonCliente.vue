@@ -1,13 +1,19 @@
 <template>
   <NavBar />
-  <section id="login " class="container">
-    <div class="text-center pt-4">
-      <h1>Login do cliente</h1>
+
+  <section id="login " class="container py-4">
+    <div class="text-center pt-4 border border-3 rounded-pill bg-rosa">
+      <h1 class="titulo">Login do cliente</h1>
       <div>
         <form action="" class="col-12 col-md-6 m-auto bg-whithe p-5">
           <div class="form-group">
             <label class="float-start"> E-mail </label>
-            <input type="email" name="email" id="email" class="form-control" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control rounded-pill"
+            />
           </div>
 
           <div class="form-group">
@@ -18,7 +24,7 @@
               type="password"
               name="senha"
               id="senha"
-              class="form-control"
+              class="form-control rounded-pill"
             />
           </div>
         </form>
@@ -27,29 +33,37 @@
         <button
           type="button"
           onclick="mainlogin.enviar()"
-          class="btn btn-danger"
+          class="btn btn-danger rounded-pill"
         >
           Continuar
         </button>
       </div>
 
-      <div class="pt-4">
-        <h4>Cadastre-se no Vallencie croches</h4>
+      <div class="py-3">
+        <router-link to="/usuario_add" class="btn btn-outline-warning mx-1">
+          Cadastra-se no Vallencie Croches
+        </router-link>
       </div>
-      <a>Ao continuar com acesso você cooncorda com a nossa</a>
-      <a class="col-12">Politica de Privacidade</a>
+      ]
     </div>
   </section>
+  <rodapeSite />
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
+import rodapeSite from "@/components/rodapeSite.vue";
 export default {
   components: {
     NavBar,
+    rodapeSite,
   },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap");
+.titulo {
+  font-family: "DM Sans", sans-serif;
+}
 </style>

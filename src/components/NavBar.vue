@@ -1,13 +1,15 @@
 <template>
   <section>
     <header>
-      <img
-        alt="Logo marca da loja bololand."
-        src="../assets/logo.marca.png"
-        class="altura"
-      />
+      <div class="text-start ps-4 container p-2">
+        <img
+          alt="Logo marca da loja bololand."
+          src="../assets/logo.marca2.png"
+          class="altura"
+        />
+      </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark grad sticky-sm-top">
+    <nav class="navbar navbar-expand-lg navbar-light grad sticky-sm-top">
       <div class="container">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button
@@ -24,27 +26,34 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><router-link to="/">Inicio</router-link> |</li>
+            <!-- <li class="nav-item"><router-link to="/">Inicio</router-link> |</li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#compras">Produtos</a>
             </li>
             <li class="nav-item"></li>
             <li class="nav-item">
-              <router-link to="/logon">login</router-link> |
+              <!-- <router-link to="/logon">login</router-link> | -->
+              <a class="nav-link" href="/logon">Login</a>
             </li>
 
             <li class="nav-item"></li>
             <li class="nav-item">
-              <router-link to="/usuario_listar">Listar</router-link> |
+              <!-- <router-link to="/usuario_add">cadastrar</router-link> | -->
+              <a class="nav-link" href="/usuario_add">Cadastrar</a>
             </li>
 
             <li class="nav-item"></li>
             <li class="nav-item">
-              <router-link to="/usuario_add">cadastrar</router-link> |
+              <!-- <router-link to="/usuario_listar">Listar</router-link> | -->
+              <a class="nav-link" href="/usuario_listar">Listar</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="carrinho.html">Carrinho</a>
+              <a class="nav-link" href="/usuario_carrinho">Carrinho</a>
             </li>
           </ul>
         </div>
@@ -77,7 +86,7 @@ nav ul li {
   font-family: Arial, Helvetica, sans-serif;
 }
 nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -88,14 +97,15 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  background-color: white;
 }
 .altura {
   height: 300px;
 }
 header {
-  background-image: url(../assets/capa.jpg);
+  background-image: url(../assets/capa2.png);
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 768px) {

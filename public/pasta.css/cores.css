@@ -32,7 +32,34 @@
 
 .grad {
     height: auto;
-    background-color: #d7949d;
+    background-color: #f8cfdf;
     /* For browsers that do not support gradients */
-    background-image: linear-gradient(#d7949d, #ecc661);
+    background-image: linear-gradient(#f8cfdf, #c7eff7, );
+}
+
+
+/* Novas cores */
+
+.rosa-claro {
+    color: #f8cfdf;
+}
+
+.bg-rosa-claro {
+    background-color: #f8cfdf;
+}
+
+.azul-claro {
+    color: #c7eff7;
+}
+
+.bg-azul-claro {
+    background-color: #c7eff7;
+}
+
+.amerelo-fraco {
+    color: #fff393;
+}
+
+.bg-amrelo-claro {
+    background-color: #fff393;
 }

@@ -1,47 +1,50 @@
 <template>
-  <div>
-    <NavBar />
-    <section class="container">
-      <h2>Usuarios</h2>
-      <table class="table">
-        <thead>
-          <th>ID</th>
-          <th>Nome</th>
-          <th>E-mail</th>
-          <th>Data Nasc.</th>
-          <th>CPF</th>
-          <th>Foto Perfil</th>
-          <!-- <th>Senha</th> -->
-          <th>Tel.</th>
-          <th>Ativo</th>
-          <th>Alterar</th>
-        </thead>
-        <tbody>
-          <tr v-for="usuario in Usuarios" :key="usuario">
-            <td>{{ usuario.id }}</td>
-            <td>{{ usuario.nome }}</td>
-            <td>{{ usuario.email }}</td>
-            <td>{{ usuario.data_nasc }}</td>
-            <td>{{ usuario.cpf }}</td>
-            <td>{{ usuario.foto_perfil }}</td>
-            <!-- <td>{{ usuario.senha }}</td> -->
-            <td>{{ usuario.tel }}</td>
-            <td>{{ usuario.ativo }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </div>
+  <NavBar />
+
+  <section class="container">
+    <h2>Usuarios</h2>
+    <table class="table">
+      <thead>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Data Nasc.</th>
+        <th>CPF</th>
+        <th>Foto Perfil</th>
+        <!-- <th>Senha</th> -->
+        <th>Tel.</th>
+        <th>Ativo</th>
+        <th>Alterar</th>
+      </thead>
+
+      <tbody>
+        <tr v-for="usuario in Usuarios" :key="usuario">
+          <td>{{ usuario.id }}</td>
+          <td>{{ usuario.nome }}</td>
+          <td>{{ usuario.email }}</td>
+          <td>{{ usuario.data_nasc }}</td>
+          <td>{{ usuario.cpf }}</td>
+          <td>{{ usuario.foto_perfil }}</td>
+          <!-- <td>{{ usuario.senha }}</td> -->
+          <td>{{ usuario.tel }}</td>
+          <td>{{ usuario.ativo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <rodapeSite />
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
 import UsuarioService from "@/services/usuarioService";
 import router from "@/router";
+import rodapeSite from "@/components/rodapeSite.vue";
 
 export default {
   components: {
     NavBar,
+    rodapeSite,
   },
   data() {
     return {
