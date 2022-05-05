@@ -4,12 +4,12 @@
       <div class="text-start ps-4 container p-2">
         <img
           alt="Logo marca da loja bololand."
-          src="../assets/logo.marca2.png"
+          src="../assets/logo.marca3.png"
           class="altura"
         />
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light grad sticky-sm-top">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-blue">
       <div class="container">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button
@@ -26,34 +26,35 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item"><router-link to="/">Inicio</router-link> |</li> -->
             <li class="nav-item">
-              <a class="nav-link" href="/">Inicio</a>
+              <router-link to="/" class="nav-link" aria-current="page"
+                >Inicio</router-link
+              >
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#compras">Produtos</a>
             </li>
-            <li class="nav-item"></li>
-            <li class="nav-item">
-              <!-- <router-link to="/logon">login</router-link> | -->
-              <a class="nav-link" href="/logon">Login</a>
-            </li>
 
-            <li class="nav-item"></li>
             <li class="nav-item">
-              <!-- <router-link to="/usuario_add">cadastrar</router-link> | -->
-              <a class="nav-link" href="/usuario_add">Cadastrar</a>
-            </li>
-
-            <li class="nav-item"></li>
-            <li class="nav-item">
-              <!-- <router-link to="/usuario_listar">Listar</router-link> | -->
-              <a class="nav-link" href="/usuario_listar">Listar</a>
+              <router-link to="/usuario_listar" class="nav-link"
+                >Listar</router-link
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/usuario_carrinho">Carrinho</a>
+              <!-- <a class="nav-link" href="/logon">Entrar</a> -->
+              <router-link to="/logon" class="nav-link">Login</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/usuario_add" class="nav-link"
+                >Cadastrar</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="/logon">Entrar</a> -->
+              <router-link to="/usuario_carrinho" class="nav-link"
+                >Carrinho</router-link
+              >
             </li>
           </ul>
         </div>
@@ -97,7 +98,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(255, 255, 255);
-  background-color: white;
+  background-color: black;
 }
 .altura {
   height: 300px;

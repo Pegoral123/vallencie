@@ -5,9 +5,9 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="@/assets/produto1.jpg"
+            src="@/assets/produto9.jpg"
             alt="demonstracao "
-            class="img-fluid p-5 imgSocial rounded-circle"
+            class="img-fluid p-4 imgSocial rounded-circle"
           />
         </a>
       </div>
@@ -15,9 +15,9 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="@/assets/produto1.jpg"
+            src="@/assets/produto8.jpg"
             alt="demonstracao "
-            class="img-fluid p-5 imgSocial rounded-circle"
+            class="img-fluid p-4 imgSocial rounded-circle"
           />
         </a>
       </div>
@@ -25,9 +25,9 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="@/assets/produto1.jpg"
+            src="@/assets/produto10.jpg"
             alt="demonstracao"
-            class="img-fluid p-5 imgSocial rounded-circle"
+            class="img-fluid p-4 imgSocial rounded-circle"
           />
         </a>
       </div>
@@ -35,9 +35,9 @@
       <div class="col-md-3 col-6">
         <a href="#compras" target="_self">
           <img
-            src="@/assets/produto1.jpg"
+            src="@/assets/produto12.jpg"
             alt="demonstracao"
-            class="img-fluid p-5 imgSocial rounded-circle"
+            class="img-fluid p-4 imgSocial rounded-circle"
           />
         </a>
       </div>

@@ -1,29 +1,30 @@
 <template>
   <section id="rodape" class="bg-rosa">
     <div class="container text-center">
-      <div><p>Follow us on Social Media:</p></div>
-      <div class="text-center font ps-4">
+      <div></div>
+      <div class="text-center ps-1">
+        <div class="pt-4"><p>Siga-nos nas Redes Sociais:</p></div>
         <a
           href="https://www.facebook.com/maryh.oliveira.180"
           target="_self"
-          class="nolink font"
+          class="nolink font ps-1"
         >
-          <i class="bi bi-facebook ps-1 icone"></i>
+          <i class="bi bi-facebook icone"></i>
         </a>
 
         <a
           href="https://api.whatsapp.com/send?l=pt-BR&phone=5521981766143&text=Oi"
-          class="nolink font"
-          ><i class="bi bi-whatsapp icon icone ps-3"></i
+          class="nolink font ps-1"
+          ><i class="bi bi-whatsapp icon icone"></i
         ></a>
         <a href="tel:+55 (21)99739-5202" class="nolink"></a>
 
         <a
           href="https://instagram.com/vollencie?utm_medium=copy_link"
           target="_self"
-          class="nolink font"
+          class="nolink font ps-1"
         >
-          <i class="bi bi-instagram ps-3 icone"></i>
+          <i class="bi bi-instagram icone"></i>
         </a>
       </div>
     </div>
