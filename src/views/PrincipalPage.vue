@@ -1,92 +1,198 @@
 <template>
   <NavBar />
-  <section id="divulgacao" class="container bg-whithe py-5">
-    <div class="row">
-      <div class="col-md-3 col-6">
-        <a href="#compras" target="_self">
-          <img
-            src="@/assets/produto9.jpg"
-            alt="demonstracao "
-            class="img-fluid p-4 imgSocial rounded-circle"
-          />
-        </a>
-      </div>
+  <section id="divulgacao" class="bg-rosa py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <a href="#compras" target="_self">
+            <img
+              src="@/assets/produto9.jpg"
+              alt="demonstracao "
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+          </a>
+        </div>
 
-      <div class="col-md-3 col-6">
-        <a href="#compras" target="_self">
-          <img
-            src="@/assets/produto8.jpg"
-            alt="demonstracao "
-            class="img-fluid p-4 imgSocial rounded-circle"
-          />
-        </a>
-      </div>
+        <div class="col-md-3 col-6">
+          <a href="#compras" target="_self">
+            <img
+              src="@/assets/produto8.jpg"
+              alt="demonstracao "
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+          </a>
+        </div>
 
-      <div class="col-md-3 col-6">
-        <a href="#compras" target="_self">
-          <img
-            src="@/assets/produto10.jpg"
-            alt="demonstracao"
-            class="img-fluid p-4 imgSocial rounded-circle"
-          />
-        </a>
-      </div>
+        <div class="col-md-3 col-6">
+          <a href="#compras" target="_self">
+            <img
+              src="@/assets/produto10.jpg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+          </a>
+        </div>
 
-      <div class="col-md-3 col-6">
-        <a href="#compras" target="_self">
-          <img
-            src="@/assets/produto12.jpg"
-            alt="demonstracao"
-            class="img-fluid p-4 imgSocial rounded-circle"
-          />
-        </a>
+        <div class="col-md-3 col-6">
+          <a href="#compras" target="_self">
+            <img
+              src="@/assets/produto12.jpg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="centro sair propaganda py-5"></section>
+  <!-- <section class="centro sair propaganda py-5"></section> -->
 
-  <section id="compras" class="bg-rosa py-5">
+  <section id="compras" class="bg-amarelo-claro py-5">
     <div class="container">
+      <h1 class="text-center titulo pb-3">Loja de Amigurimis</h1>
       <div class="row">
-        <div class="col-md-6 col-12">
-          <div class="produtos row">
-            <div class="col-6 img-fluid pt-2">
-              <img src="../assets/produto2.jpg" class="img-fluid" />
-            </div>
-            <div class="py-3 col-6">
-              <h1>Produtos</h1>
-              <p class="frases">
-                Eu amo esse site,deveras maravilhoso o produto e o programador
+        <div class="col-md-4 col-12">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto5.jpeg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">
+                Chaveiro de Melancia
+              </h4>
+              <p class="card-text frases tamanho2">
+                Crochê feita com muito amor e atenção!
               </p>
-              <p class="fs-4">Preço: R$200,00</p>
+              <h5 class="card-text">Preço:$100,00</h5>
+              <div class="col-md-12 col-12 p-2">
+                <div class="row">
+                  <div class="col-md-6 col-12 p-2">
+                    <div class="">
+                      <a href="pages/produto-detalhe.html" target="_blank">
+                        <button
+                          type="button"
+                          class="btn bg-amarelo-claro col-12"
+                        >
+                          Encomenda
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-12 p-2">
+                    <div class="">
+                      <a href="pages/produto-detalhe.html" target="_blank">
+                        <button type="button" class="btn bg-rosa col-12">
+                          Personalizar
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5>Deixe seu comentario!</h5>
+                <input type="email" class="rounded-pill roxo" />
+              </div>
             </div>
-            <div class="ps-3 pb-3 col-12 pt-3">
-              <div class="row">
-                <div class="col-4 text-center padding-left">
-                  <input
-                    type="number"
-                    step="1"
-                    min="0"
-                    max="10"
-                    value="0"
-                    class="form-control"
-                  />
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto12.jpg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">Yoda</h4>
+              <p class="card-text frases tamanho2">
+                Melhor programdor que vai passar por esse mundo
+              </p>
+              <h5 class="card-text">Preço:$100,00</h5>
+              <div class="col-md-12 col-12 p-2">
+                <div class="row">
+                  <div class="col-md-6 col-12 p-2">
+                    <div class="">
+                      <a href="pages/produto-detalhe.html" target="_blank">
+                        <button
+                          type="button"
+                          class="btn bg-amarelo-claro col-12"
+                        >
+                          Encomenda
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-12 p-2">
+                    <div class="">
+                      <a href="pages/produto-detalhe.html" target="_blank">
+                        <button type="button" class="btn bg-rosa col-12">
+                          Personalizar
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-4 text-center">
-                  <a href="carrinho.html" target="_self">
-                    <button type="button" class="btn btn-danger">
-                      Encomendar
-                    </button>
-                  </a>
+              </div>
+              <div>
+                <h5>Deixe seu comentario!</h5>
+                <input type="email" class="rounded-pill roxo" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto7.jpeg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">Bonequinha</h4>
+              <p class="card-text frases tamanho2">
+                Crochê feita com muito amor e atenção!
+              </p>
+              <h5 class="card-text">Preço:$100,00</h5>
+              <div class="col-md-12 col-12 p-2">
+                <div class="row">
+                  <div class="col-md-6 col-12 p-2">
+                    <div class="">
+                      <a href="pages/produto-detalhe.html" target="_blank">
+                        <button
+                          type="button"
+                          class="btn bg-amarelo-claro col-12"
+                        >
+                          Encomenda
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-12 p-2">
+                    <div class="">
+                      <a href="pages/produto-detalhe.html" target="_blank">
+                        <button type="button" class="btn bg-rosa col-12">
+                          Personalizar
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-4 padding">
-                  <a href="/git.vallenciee/personalizar.html" target="_self">
-                    <button type="button" class="btn btn-danger">
-                      Personalizar
-                    </button>
-                  </a>
-                </div>
+              </div>
+              <div>
+                <h5>Deixe seu comentario!</h5>
+                <input type="email" class="rounded-pill roxo" />
               </div>
             </div>
           </div>
@@ -94,13 +200,14 @@
       </div>
     </div>
   </section>
-  <section class="propaganda2 centro sair py-5"></section>
 
-  <section id="promocoes" class="bg-whithe py-5">
+  <!-- <section class="propaganda2 centro sair py-5"></section> -->
+
+  <section id="promocoes" class="bg-whithe py-5 bg-rosa">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-12">
-          <h2 class="text-center">
+          <h2 class="text-center titulo">
             Inscreva-se e Receba nossas promoções no e-mail ou direto no celular
           </h2>
           <form>
@@ -129,7 +236,7 @@
         </div>
 
         <div class="col-md-6 col-12 text-center tamanho">
-          <h1 class="">Tutorial gratis de Croche</h1>
+          <h1 class="titulo">Tutorial gratis de Croche</h1>
           <div>
             <iframe
               width="98%"
@@ -146,36 +253,62 @@
     </div>
   </section>
 
-  <section id="social" class="bg-rosa py-5">
+  <section id="social" class="bg-amarelo-claro py-5">
     <div class="container">
       <div class="row">
         <div>
-          <h1 class="pb=3">Comentarios</h1>
+          <h1 class="pb=3 titulo">Comentarios</h1>
         </div>
-        <div class="col-md-8 col-12">
-          <div class="row border border-dark ps-2 py-3 px-3">
-            <div class="row col-md-4 col-12 pb-3 fotoSocial">
+
+        <div class="col-md-6 col-12 px-5">
+          <div class="row produtos p-2 border-circle">
+            <div class="col-md-4 col-12 text-center my-auto">
               <img
                 src="https://picsum.photos/200/200"
-                class="img-fluid rounded-circle text-center"
+                class="img-fluid rounded-circle"
               />
             </div>
-            <div class="col-md-8 col-12 border border-dark">
-              <div class="row">
-                <h2>Usuario:Marina</h2>
-                <h4>
-                  Maravilhoso,amei fazer minhas compras nesse site, seguro e
-                  confiavel
-                </h4>
-                <i class="bi bi-award-fill"></i>
+            <div class="col-md-8 col-12 pt-4">
+              <div class="border-bottom">
+                <h3 class="text-start frases">Pegoral</h3>
+                <p class="text-center pt-2 titulo tamanho">
+                  O programador é brabo de mais, Tem que contratar ele!
+                </p>
+              </div>
+              <div class="p-2 text-end fs-3">
+                <i class="bi bi-heart px-1"></i>
+                <i class="bi bi-chat-dots px-1"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="propaganda3" class="sair col-4">
-          <img src="@/assets/propaganda.jpeg" class="img-fluid" />
+        <div class="col-md-6 col-12 px-5">
+          <div class="row produtos p-2 border-circle">
+            <div class="col-md-4 col-12 text-center my-auto">
+              <img
+                src="https://picsum.photos/200/200"
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <div class="col-md-8 col-12 pt-4">
+              <div class="border-bottom">
+                <h3 class="text-start frases">Marina</h3>
+                <p class="text-center pt-2 titulo tamanho">
+                  Amei o site, Produtos maravilhosos e facil de mexer!
+                </p>
+              </div>
+              <div class="p-2 text-end fs-3">
+                <i class="bi bi-heart px-1"></i>
+                <i class="bi bi-chat-dots px-1"></i>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- <div id="propaganda3" class="sair col-4">
+          <img src="@/assets/propaganda.jpeg" class="img-fluid" />
+        </div> -->
       </div>
     </div>
   </section>
@@ -194,9 +327,40 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
+
+.tamanho {
+  font-size: 30px;
+}
+.tamanho2 {
+  font-size: 20px;
+}
+
+.titulo {
+  font-family: "Amatic SC", cursive;
+}
+
+.frases {
+  font-family: "Baloo 2", cursive;
+}
+
+.borda {
+  border-color: #c7eff7;
+}
+
+.roxo {
+  background-color: #eac0ed;
+}
+
 .bg-rosa {
   background-color: #f8cfdf;
 }
+
+.bg-amarelo-claro {
+  background-color: #fff393;
+}
+
 .bg-black {
   background-color: black;
 }

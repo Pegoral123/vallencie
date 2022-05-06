@@ -44,7 +44,6 @@
           Cadastra-se no Vallencie Croches
         </router-link>
       </div>
-      ]
     </div>
   </section>
   <rodapeSite />
@@ -62,8 +61,13 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
 .titulo {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Amatic SC", cursive;
+}
+
+.frases {
+  font-family: "Baloo 2", cursive;
 }
 </style>

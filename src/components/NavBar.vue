@@ -9,7 +9,7 @@
         />
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-blue">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-blue">
       <div class="container">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button
@@ -73,7 +73,7 @@ export default {
 nav {
   max-height: 50px;
   min-height: 30px;
-  background-color: palevioletred;
+  background-color: #eac0ed;
 }
 nav ul {
   display: block;
@@ -98,7 +98,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(255, 255, 255);
-  background-color: black;
+  background-color: white;
 }
 .altura {
   height: 300px;

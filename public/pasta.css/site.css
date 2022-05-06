@@ -1,7 +1,20 @@
 /*Cabeçalho*/
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
+.titulo {
+    font-family: "Amatic SC", cursive;
+}
+
+.frases {
+    font-family: "Baloo 2", cursive;
+}
+
+body {
+    font-family: "Amatic SC", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap');
 header {
     background-image: url(../img/fotos-da-marina/capa.jpg);
     background-position: center;
