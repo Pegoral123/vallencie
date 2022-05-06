@@ -13,6 +13,7 @@
               name="email"
               id="email"
               class="form-control rounded-pill"
+              v-model="dadosUsuario.usuario"
             />
           </div>
 
@@ -25,6 +26,7 @@
               name="senha"
               id="senha"
               class="form-control rounded-pill"
+              v-model="dadosUsuario.senha"
             />
           </div>
         </form>
@@ -32,10 +34,17 @@
       <div class="">
         <button
           type="button"
-          onclick="mainlogin.enviar()"
           class="btn btn-danger rounded-pill"
+          @click="logonUsuario()"
         >
           Continuar
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark rounded-pill ps-2"
+          @click="logoffUsuario()"
+        >
+          Sair
         </button>
       </div>
 
@@ -52,10 +61,61 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import rodapeSite from "@/components/rodapeSite.vue";
+import UsuarioService from "@/services/usuarioService";
+import router from "@/router";
 export default {
   components: {
     NavBar,
     rodapeSite,
+  },
+  data() {
+    return {
+      dadosUsuario: {
+        usuario: "",
+        senha: "",
+      },
+    };
+  },
+  mounted() {
+    //this.loadDoc("http://localhost/api/usuario/list", myFunction);
+    this.listarUsuarios();
+  },
+  methods: {
+    // function loadDoc(url, xFunction) {
+    //   const xhttp = new XMLHttpRequest();
+    //   xhttp.onload = function () {
+    //     xFunction(this);
+    //   };
+    //   xhttp.open("GET", url);
+    //   xhttp.send();
+    // }
+    // function myFunction(xhttp) {
+    //   console.log(xhttp.responseText);
+    // }
+
+    listarUsuarios() {
+      UsuarioService.list().then((res) => {
+        console.log(res);
+      });
+    },
+    logonUsuario() {
+      UsuarioService.login(this.dadosUsuario)
+        .then((res) => {
+          console.log(res);
+          localStorage.setItem("token", res.data.result.token);
+          localStorage.setItem("user", JSON.stringify(res.data.result));
+          alert("Usuario logado!");
+          router.push("/");
+        })
+        .catch((err) => {
+          console.log(err);
+          alert("Erro ao fazer o login!");
+        });
+    },
+    logoffUsuario() {
+      localStorage.clear();
+      router.push("/");
+    },
   },
 };
 </script>
