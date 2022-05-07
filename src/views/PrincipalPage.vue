@@ -50,7 +50,7 @@
 
   <section id="compras" class="bg-amarelo-claro py-5">
     <div class="container">
-      <h1 class="text-center titulo pb-3">Loja de Amigurimis</h1>
+      <h1 class="text-center titulo pb-3">Loja de Amigurumis</h1>
       <div class="row">
         <div class="col-md-4 col-12">
           <div class="card" style="width: 18rem">
@@ -113,7 +113,7 @@
             <div class="card-body">
               <h4 class="card-title pb-2 titulo tamanho">Yoda</h4>
               <p class="card-text frases tamanho2">
-                Melhor programdor que vai passar por esse mundo
+                Melhor programador que vai passar por esse mundo
               </p>
               <h5 class="card-text">Preço:$100,00</h5>
               <div class="col-md-12 col-12 p-2">
@@ -125,7 +125,7 @@
                           type="button"
                           class="btn bg-amarelo-claro col-12"
                         >
-                          Encomenda
+                          Comprar
                         </button>
                       </a>
                     </div>
