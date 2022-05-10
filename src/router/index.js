@@ -37,7 +37,16 @@ const routes = [{
         component: () =>
             import ('@/components/usuarioCarrinho.vue') // "=>" equivale a uma "function(){}"
 
-    }
+    },
+
+    {
+        path: '/pruduto_perso',
+        name: 'produto_perso',
+        component: () =>
+            import ('@/components/produtoPerso.vue') // "=>" equivale a uma "function(){}"
+
+    },
+
 
 ]
 

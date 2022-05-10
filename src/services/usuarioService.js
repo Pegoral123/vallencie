@@ -1,22 +1,36 @@
 import { Usuario } from '@/models/usuario.js';
-import { http } from './config.js';
+import { http } from './config';
 
 export default {
-    list: function() {
-        return http.get("usuario/list");
-    },
-
-    login: function(dadosUsuario) {
-        // {
-        //  "usuario": "sc@email.com",
-        //  "senha": "123@123"
-        // }
-        console.log(dadosUsuario);
-        return http.post("usuario/logon", dadosUsuario);
-    },
 
     add: function(dadosUsuario = new Usuario) {
         console.log(dadosUsuario);
         return http.post("usuario/add", dadosUsuario);
-    }
-};
+    },
+
+
+    list: function() {
+        return http.get("usuario/list");
+    },
+
+
+    get: function(id) {
+        return http.get("usuario/get/" + id);
+    },
+
+
+    /// {
+    ///  "usuario": "sc@email.com",
+    ///  "senha": "123@123"
+    /// }
+    login: function(dadosUsuario) {
+        //console.log(dadosUsuario);
+        return http.post("usuario/logon", dadosUsuario);
+    },
+
+    // upload: function(files) {
+    //     console.log(files);
+    //     return http.post("usuario/upload", files);
+    // }
+
+}

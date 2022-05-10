@@ -72,24 +72,20 @@
                 <div class="row">
                   <div class="col-md-6 col-12 p-2">
                     <div class="">
-                      <a href="pages/produto-detalhe.html" target="_blank">
-                        <button
-                          type="button"
-                          class="btn bg-amarelo-claro col-12"
-                        >
-                          Encomenda
-                        </button>
-                      </a>
+                      <router-link
+                        to="/usuario_carrinho"
+                        class="btn bg-amarelo-claro mx-1"
+                      >
+                        Comprar
+                      </router-link>
                     </div>
                   </div>
 
                   <div class="col-md-6 col-12 p-2">
                     <div class="">
-                      <a href="pages/produto-detalhe.html" target="_blank">
-                        <button type="button" class="btn bg-rosa col-12">
-                          Personalizar
-                        </button>
-                      </a>
+                      <router-link to="/pruduto_perso" class="btn bg-rosa mx-1">
+                        Personalizar
+                      </router-link>
                     </div>
                   </div>
                 </div>
@@ -120,24 +116,20 @@
                 <div class="row">
                   <div class="col-md-6 col-12 p-2">
                     <div class="">
-                      <a href="pages/produto-detalhe.html" target="_blank">
-                        <button
-                          type="button"
-                          class="btn bg-amarelo-claro col-12"
-                        >
-                          Comprar
-                        </button>
-                      </a>
+                      <router-link
+                        to="/usuario_carrinho"
+                        class="btn bg-amarelo-claro mx-1"
+                      >
+                        Comprar
+                      </router-link>
                     </div>
                   </div>
 
                   <div class="col-md-6 col-12 p-2">
                     <div class="">
-                      <a href="pages/produto-detalhe.html" target="_blank">
-                        <button type="button" class="btn bg-rosa col-12">
-                          Personalizar
-                        </button>
-                      </a>
+                      <router-link to="/pruduto_perso" class="btn bg-rosa mx-1">
+                        Personalizar
+                      </router-link>
                     </div>
                   </div>
                 </div>
@@ -168,24 +160,20 @@
                 <div class="row">
                   <div class="col-md-6 col-12 p-2">
                     <div class="">
-                      <a href="pages/produto-detalhe.html" target="_blank">
-                        <button
-                          type="button"
-                          class="btn bg-amarelo-claro col-12"
-                        >
-                          Encomenda
-                        </button>
-                      </a>
+                      <router-link
+                        to="/usuario_carrinho"
+                        class="btn bg-amarelo-claro mx-1"
+                      >
+                        Comprar
+                      </router-link>
                     </div>
                   </div>
 
                   <div class="col-md-6 col-12 p-2">
                     <div class="">
-                      <a href="pages/produto-detalhe.html" target="_blank">
-                        <button type="button" class="btn bg-rosa col-12">
-                          Personalizar
-                        </button>
-                      </a>
+                      <router-link to="/pruduto_perso" class="btn bg-rosa mx-1">
+                        Personalizar
+                      </router-link>
                     </div>
                   </div>
                 </div>
