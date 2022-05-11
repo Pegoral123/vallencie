@@ -6,9 +6,9 @@ export const configure = {
 
 
 export const http = axios.create({
-    // baseURL: "https://vollencie-amigurimis.000webhostapp.com",
-
-    baseURL: configure.localAPI,
+    baseURL: "https://vollencie-amigurimis.000webhostapp.com/api",
+    // // baseURL: "http://localhost/api/",
+    // baseURL: configure.localAPI,
     headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json;charset=utf-8',
