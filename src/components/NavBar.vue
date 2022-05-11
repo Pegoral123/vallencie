@@ -27,49 +27,111 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link to="/" class="nav-link" aria-current="page"
+              <router-link
+                to="/"
+                class="nav-link frases tamanho"
+                aria-current="page"
                 >Inicio</router-link
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#compras">Produtos</a>
-            </li>
-
-            <li class="nav-item">
-              <router-link to="/usuario_listar" class="nav-link"
-                >Listar</router-link
-              >
-            </li>
-
-            <li class="nav-item">
-              <!-- <a class="nav-link" href="/logon">Entrar</a> -->
-              <router-link to="/logon" class="nav-link">Login</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/usuario_add" class="nav-link"
-                >Cadastrar</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <!-- <a class="nav-link" href="/logon">Entrar</a> -->
-              <router-link to="/usuario_carrinho" class="nav-link"
-                >Carrinho</router-link
-              >
-            </li>
           </ul>
+
+          <div v-if="usuario == null">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <router-link to="/logon" class="nav-link frases tamanho"
+                  >Login</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <router-link to="/usuario_add" class="nav-link frases tamanho"
+                  >Cadastrar</router-link
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link frases tamanho" href="#compras">
+                  Amigurumis</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div v-else>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <router-link to="/usuario_perfil" class="nav-link">
+                  {{ usuario.nome }}
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link frases tamanho" @click="logoffUsuario()"
+                  >Sair</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link frases tamanho" href="#compras">
+                  Amigurumis</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
   </section>
 </template>
 
+
 <script >
+import { Usuario } from "@/models/usuario.js";
+import router from "@/router";
+
+var usuario = new Usuario();
 export default {
   nome: "NavBar",
+  data() {
+    return {
+      usuario,
+    };
+  },
+  methods: {
+    getUsuario() {
+      let user = JSON.parse(localStorage.getItem("user"));
+      this.usuario = typeof user === undefined ? null : user;
+    },
+    logoffUsuario() {
+      localStorage.clear();
+      this.usuario = null;
+      router.push("/");
+    },
+  },
+  mounted() {
+    this.getUsuario();
+  },
+  // watch: {
+  //   usuario: function () {},
+  // },
 };
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=DM+Sans:ital,wght@1,500&family=Mukta:wght@200&display=swap");
+
+.tamanho {
+  font-size: 25px;
+}
+.tamanho2 {
+  font-size: 20px;
+}
+
+.titulo {
+  font-family: "Amatic SC", cursive;
+}
+
+.frases {
+  font-family: "Baloo 2", cursive;
+}
+
 nav {
   max-height: 50px;
   min-height: 30px;

@@ -6,12 +6,12 @@
       <div>
         <form action="" class="col-12 col-md-6 m-auto bg-whithe p-5">
           <div class="form-group">
-            <label class="float-start"> Usuaraio </label>
+            <label class="float-start"> Usuario </label>
             <input
               type="text"
               name="nome"
               class="form-control rounded-pill"
-              v-model="usuario.usuario"
+              v-model="usuario.nome"
             />
           </div>
 

@@ -50,9 +50,103 @@
 
   <section id="compras" class="bg-amarelo-claro py-5">
     <div class="container">
-      <h1 class="text-center titulo pb-3">Loja de Amigurumis</h1>
-      <div class="row">
-        <div class="col-md-4 col-12">
+      <h1 class="text-center titulo pb-3">Amigurumis</h1>
+      <div class="row text-center">
+        <div class="col-md-4 col-12 py-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto12.jpg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">Yoda</h4>
+              <p class="card-text frases tamanho2">
+                Crochê feita com muito amor e atenção!
+              </p>
+              <h5 class="card-text py-3">Preço:$40,00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 py-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto10.jpg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">
+                Unicórnio de Pelucia
+              </h4>
+              <p class="card-text frases tamanho2">
+                Crochê feita com muito amor e atenção!
+              </p>
+              <h5 class="card-text py-3">Preço:$150,00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 py-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto9.jpg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">Polvo de Pelucia</h4>
+              <p class="card-text frases tamanho2">
+                Crochê feita com muito amor e atenção!
+              </p>
+              <h5 class="card-text py-3">Preço:$70,00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 py-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto8.jpeg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">
+                Porquinho de Pelucia
+              </h4>
+              <p class="card-text frases tamanho2">
+                Crochê feita com muito amor e atenção!
+              </p>
+              <h5 class="card-text py-3">Preço:$50,00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 py-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="@/assets/produto7.jpeg"
+              alt="demonstracao"
+              class="img-fluid p-4 imgSocial rounded-circle"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title pb-2 titulo tamanho">Bonequinha</h4>
+              <p class="card-text frases tamanho2">
+                Crochê feita com muito amor e atenção!
+              </p>
+              <h5 class="card-text py-3">Preço:$150,00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 py-4">
           <div class="card" style="width: 18rem">
             <img
               src="@/assets/produto5.jpeg"
@@ -67,121 +161,7 @@
               <p class="card-text frases tamanho2">
                 Crochê feita com muito amor e atenção!
               </p>
-              <h5 class="card-text">Preço:$100,00</h5>
-              <div class="col-md-12 col-12 p-2">
-                <div class="row">
-                  <div class="col-md-6 col-12 p-2">
-                    <div class="">
-                      <router-link
-                        to="/usuario_carrinho"
-                        class="btn bg-amarelo-claro mx-1"
-                      >
-                        Comprar
-                      </router-link>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 col-12 p-2">
-                    <div class="">
-                      <router-link to="/pruduto_perso" class="btn bg-rosa mx-1">
-                        Personalizar
-                      </router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h5>Deixe seu comentario!</h5>
-                <input type="email" class="rounded-pill roxo" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-12">
-          <div class="card" style="width: 18rem">
-            <img
-              src="@/assets/produto12.jpg"
-              alt="demonstracao"
-              class="img-fluid p-4 imgSocial rounded-circle"
-            />
-
-            <div class="card-body">
-              <h4 class="card-title pb-2 titulo tamanho">Yoda</h4>
-              <p class="card-text frases tamanho2">
-                Melhor programador que vai passar por esse mundo
-              </p>
-              <h5 class="card-text">Preço:$100,00</h5>
-              <div class="col-md-12 col-12 p-2">
-                <div class="row">
-                  <div class="col-md-6 col-12 p-2">
-                    <div class="">
-                      <router-link
-                        to="/usuario_carrinho"
-                        class="btn bg-amarelo-claro mx-1"
-                      >
-                        Comprar
-                      </router-link>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 col-12 p-2">
-                    <div class="">
-                      <router-link to="/pruduto_perso" class="btn bg-rosa mx-1">
-                        Personalizar
-                      </router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h5>Deixe seu comentario!</h5>
-                <input type="email" class="rounded-pill roxo" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-12">
-          <div class="card" style="width: 18rem">
-            <img
-              src="@/assets/produto7.jpeg"
-              alt="demonstracao"
-              class="img-fluid p-4 imgSocial rounded-circle"
-            />
-
-            <div class="card-body">
-              <h4 class="card-title pb-2 titulo tamanho">Bonequinha</h4>
-              <p class="card-text frases tamanho2">
-                Crochê feita com muito amor e atenção!
-              </p>
-              <h5 class="card-text">Preço:$100,00</h5>
-              <div class="col-md-12 col-12 p-2">
-                <div class="row">
-                  <div class="col-md-6 col-12 p-2">
-                    <div class="">
-                      <router-link
-                        to="/usuario_carrinho"
-                        class="btn bg-amarelo-claro mx-1"
-                      >
-                        Comprar
-                      </router-link>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 col-12 p-2">
-                    <div class="">
-                      <router-link to="/pruduto_perso" class="btn bg-rosa mx-1">
-                        Personalizar
-                      </router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h5>Deixe seu comentario!</h5>
-                <input type="email" class="rounded-pill roxo" />
-              </div>
+              <h5 class="card-text py-3">Preço:$15,00</h5>
             </div>
           </div>
         </div>
