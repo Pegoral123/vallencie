@@ -6,7 +6,7 @@
       <div>
         <form action="" class="col-12 col-md-6 m-auto bg-whithe p-5">
           <div class="form-group">
-            <label class="float-start"> E-mail </label>
+            <label class="float-start"> E-mail jhonathanpegoral </label>
             <input
               type="email"
               id="email"
